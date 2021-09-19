@@ -1,5 +1,5 @@
 from kivymd.uix.floatlayout import MDFloatLayout
+from kivymd.uix.boxlayout import MDBoxLayout
 
-
-class FloatBuild(MDFloatLayout):
+class FloatBuild(MDBoxLayout):
     pass

@@ -1,2 +1,44 @@
 <FloatBuild>:
-    
+    orientation:'vertical'
+    MDToolbar:
+        title:'Selections'
+        right_action_items:[['account', lambda x:x]]
+    MDBoxLayout:
+        orientation:'vertical'
+        spacing:dp(5)
+        MDGridLayout: 
+            padding:[dp(30),0,0,0]
+            cols:2
+            spacing:dp(10)
+            adaptive_height:True
+            Options:
+            MDLabel:
+                text:'Single Room'
+            Options:
+            MDLabel:
+                text:'Bedsitter'
+            Options:
+            MDLabel:
+                text:'Single Room'
+            Options:
+            MDLabel:
+                text:'Appartments'
+            Options:
+            MDLabel:
+                text:'Guest House'
+    MDFloatLayout:
+        size_hint_y:.2
+
+
+
+<Input@MDTextFieldRound>:
+    size_hint_x:.8
+    pos_hint:{'center_x':.5}
+    normal_color:[1,1,1,0]
+    color_active:[1,1,1,0]
+<Options@MDCheckbox>:
+    size_hint:None,None
+    size:dp(20),dp(20)
+    checkbox_icon_normal:'checkbox-multiple-blank-circle'
+    checkbox_icon_down:'check-all'
+        

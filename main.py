@@ -15,7 +15,7 @@ class HotReload(App,MDApp):
         ('.',{'recursive':True})
     ]
 
-    def build_app(self, first):
+    def build_app(self):
         return Factory.FloatBuild()
 
 if __name__=='__main__':
